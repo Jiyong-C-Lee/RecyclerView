@@ -119,8 +119,10 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         app:layout_constraintTop_toBottomOf="@+id/post_comment_box"
+        app:layout_constraintBottom_toTopOf="@+id/post_series_box"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         >
         <Button
             android:id="@+id/post_tool_bulb"
@@ -128,48 +130,42 @@
             android:layout_width="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintleft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
+            android:layout_marginLeft="41dp"
             android:drawableLeft="@drawable/detailview_bulb"
             android:background="#00000000"
-            android:text="120"
-            android:layout_marginRight="271dp"
-            app:layout_constraintVertical_bias="0.0" />
+            android:text="120"/>
         <Button
             android:id="@+id/post_tool_reply"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintleft_toLeftOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
             android:drawableLeft="@drawable/detailview_reply"
             android:background="#00000000"
             android:text="120"
-
-            android:layout_marginRight="8dp"
-            app:layout_constraintVertical_bias="1.0"
-            app:layout_constraintLeft_toRightOf="@+id/post_tool_bulb"
-            android:layout_marginLeft="8dp"
-            app:layout_constraintRight_toLeftOf="@+id/post_tool_collect" />
+            />
         <Button
             android:id="@+id/post_tool_collect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintleft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
             android:drawableLeft="@drawable/detailview_collect"
             android:background="#00000000"
             android:text="120"
-            android:layout_marginRight="16dp"
-            app:layout_constraintVertical_bias="0.0" />
+            android:layout_marginRight="41dp" />
 
 
     </android.support.constraint.ConstraintLayout>
@@ -182,7 +178,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
-        
+
     </android.support.constraint.ConstraintLayout>
 
 
