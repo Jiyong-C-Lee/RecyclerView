@@ -25,7 +25,8 @@ public class PostActivity extends Activity{
     Button post_back_btn;
     TextView post_title;
     TextView post_sub_title;
-    TextView post_summary;
+    TextView post_summary_explain;
+    TextView post_summary_content;
     RecyclerView post_recyclerView;
 
 
@@ -47,7 +48,8 @@ public class PostActivity extends Activity{
         post_back_btn = (Button)findViewById(R.id.post_back_btn);
         post_title = (TextView)findViewById(R.id.post_title);
         post_sub_title = (TextView)findViewById(R.id.post_sub_title);
-        post_summary = (TextView)findViewById(R.id.post_summary);
+        post_summary_explain = (TextView)findViewById(R.id.action_explorer);
+        post_summary_content = (TextView)findViewById(R.id.post_summary_content);
         post_recyclerView = (RecyclerView)findViewById(R.id.post_recyclerview);
 
         post_recyclerView.setHasFixedSize(true);
@@ -55,15 +57,12 @@ public class PostActivity extends Activity{
 
 
         //타이틀, 서브타이틀, 서머리 얻어오기
-        /*post_title.getResources().getText();
+        /*
+        post_title.getResources().getText();
         post_sub_title.getResources().getText();
-        post_summary.getResources().getText();
+        post_summary_explain.getResources().getText();
+        post_summary_content.getResources().getText();
         */
-
-        //서머리 텍스트뷰 애니메이션
-        post_summary.setVisibility(View.VISIBLE);
-
-
         //리사이클러뷰
         item_list = new ArrayList<>();
         item_list.add(new PostItems(R.drawable.imageex1, "이미지 예제 1"));
