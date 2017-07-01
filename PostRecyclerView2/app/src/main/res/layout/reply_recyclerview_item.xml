@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/category_btn_background"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <ImageView
+        android:id="@+id/reply_recyclerview_profile_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/detailview_bulblignt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginStart="3dp" />
+    <TextView
+        android:id="@+id/reply_recyclerview_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/reply_recyclerview_profile_img"
+        app:layout_constraintTop_toTopOf="@+id/reply_recyclerview_profile_img"
+        android:text="Jiyong Lee"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/reply_recyclerview_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/reply_recyclerview_profile_name"
+        app:layout_constraintBottom_toTopOf="@+id/reply_recyclerview_write_reply_btn"
+        app:layout_constraintLeft_toRightOf="@+id/reply_recyclerview_profile_img"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:text="짧은댓글"
+        android:textColor="#000000"
+        android:textSize="18sp"
+
+        tools:layout_editor_absoluteY="0dp" />
+    <Button
+        android:id="@+id/reply_recyclerview_write_reply_btn"
+        android:layout_width="50sp"
+        android:layout_height="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/reply_recyclerview_profile_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="3dp"
+        android:text="답글달기"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:gravity="left"
+        android:background="#00000000"
+        />
+    <TextView
+        android:id="@+id/reply_recyclerview_reply_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/reply_recyclerview_write_reply_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/reply_recyclerview_write_reply_btn"
+        android:text="20분 전"
+        android:textSize="12sp"
+        android:layout_marginLeft="12dp"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

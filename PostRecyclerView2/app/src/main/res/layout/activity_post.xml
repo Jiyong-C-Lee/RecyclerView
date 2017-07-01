@@ -8,7 +8,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <android.support.constraint.ConstraintLayout
         android:id="@+id/post_titlebar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#1D1A27"
         app:layout_constraintTop_toTopOf="parent"
@@ -19,7 +19,7 @@
 
         <Button
             android:id="@+id/post_back_btn"
-            android:layout_width="60dp"
+            android:layout_width="88dp"
             android:layout_height="60dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -28,7 +28,7 @@
             />
         <TextView
             android:id="@+id/post_title"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/post_sub_title"
@@ -42,7 +42,7 @@
             />
         <TextView
             android:id="@+id/post_sub_title"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/post_title"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -62,7 +62,7 @@
         android:id="@+id/post_coordinatorLayout"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/post_titlebar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,7 +109,7 @@
                         android:id="@+id/post_summary_content"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        app:layout_constraintTop_toBottomOf="@id/post_summary_explain"
+                        app:layout_constraintTop_toBottomOf="@+id/post_summary_explain"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
