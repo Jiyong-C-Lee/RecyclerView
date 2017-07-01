@@ -11,18 +11,18 @@ import android.widget.TextView;
  */
 
 public class ReplyRecyclerViewHolder extends RecyclerView.ViewHolder {
-    public ImageView profile_img;
-    public TextView profile_name;
-    public TextView reply;
+    public ImageView reply_profile_img;
+    public TextView reply_profile_name;
+    public TextView reply_reply;
     public TextView reply_time;
     public Button write_reply_btn;
 
     public ReplyRecyclerViewHolder(View itemView) {
         super(itemView);
 
-        profile_img = (ImageView)itemView.findViewById(R.id.reply_recyclerview_profile_img);
-        profile_name = (TextView)itemView.findViewById(R.id.reply_recyclerview_profile_name);
-        reply = (TextView)itemView.findViewById(R.id.reply_reply);
+        reply_profile_img = (ImageView)itemView.findViewById(R.id.reply_recyclerview_profile_img);
+        reply_profile_name = (TextView)itemView.findViewById(R.id.reply_recyclerview_profile_name);
+        reply_reply = (TextView)itemView.findViewById(R.id.reply_reply);
         reply_time = (TextView)itemView.findViewById(R.id.reply_recyclerview_reply_time);
         write_reply_btn = (Button)itemView.findViewById(R.id.reply_recyclerview_write_reply_btn);
 

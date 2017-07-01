@@ -33,6 +33,8 @@ public class ReplyRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.View
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         //프로필 이미지, 이름 받아오기
+        //((ReplyRecyclerViewHolder) holder).reply_profile_img.setImageResource(Integer.parseInt(item_list.get(position).reply_img));
+        ((ReplyRecyclerViewHolder) holder).reply_profile_name.setText(item_list.get(position).reply_name);
         //리플 받아오기
         //리플 시간 받아오기
     }

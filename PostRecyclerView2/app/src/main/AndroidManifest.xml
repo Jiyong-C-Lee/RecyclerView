@@ -14,6 +14,11 @@
 
         <activity android:name=".ReplyActivity">
 
+
+        </activity>
+
+        <activity android:name=".CreateActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

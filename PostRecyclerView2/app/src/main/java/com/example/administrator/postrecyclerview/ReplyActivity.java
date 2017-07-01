@@ -9,6 +9,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -25,6 +27,9 @@ public class ReplyActivity extends Activity {
 
     ArrayList<ReplyData> data_list;
     LinearLayoutManager linear_layout_manager;
+    ImageView reply_bottom_profile_img;
+    EditText reply_input_edittext;
+    Button reply_input_btn;
 
     ReplyRecyclerAdapter adapter;
 
@@ -52,6 +57,13 @@ public class ReplyActivity extends Activity {
 
         reply_recyclerView.setAdapter(adapter);
         reply_recyclerView.setLayoutManager(linear_layout_manager);
+
+        reply_bottom_profile_img = (ImageView)findViewById(R.id.reply_bottom_profile_img);
+        reply_input_edittext = (EditText)findViewById(R.id.reply_input_reply);
+        reply_input_btn = (Button)findViewById(R.id.reply_input_btn);
+
+        //reply_back_btn.setOnClickListener();
+        //reply_input_btn.setOnClickListener();
 
 
     }
