@@ -14,7 +14,6 @@
 
         <activity android:name=".ReplyActivity">
 
-
         </activity>
 
         <activity android:name=".CreateActivity">
@@ -24,6 +23,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
 
         </activity>
     </application>
